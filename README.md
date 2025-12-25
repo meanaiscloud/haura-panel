@@ -23,9 +23,12 @@ network needed):
 
 # OR git bundles exported from networked machines to preserve commit history
 ./scripts/import-haura-all.sh --panel-bundle ./panel.bundle --wings-bundle ./wings.bundle
+ codex/fork-pterodactyl-panel-as-haura-panel
 
 # OR fetch tarballs directly when outbound network access works
 ./scripts/import-haura-all.sh --fetch-tarballs --panel-ref develop --wings-ref master
+
+ main
 ```
 
 The script:
@@ -36,9 +39,13 @@ The script:
 3. Skips work if either directory already exists.
 4. Accepts `--allow-git-clone` to pull directly from GitHub when outbound access
    is permitted.
+
+codex/fork-pterodactyl-panel-as-haura-panel
 5. Accepts `--fetch-tarballs` to download upstream tarballs automatically when
    network access is available (defaults to panel `develop` and wings `master`
    refs; override with `--panel-ref` / `--wings-ref`).
+
+ main
 
 ### Option B: import panel only from release archives (fastest)
 
