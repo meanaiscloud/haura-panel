@@ -24,8 +24,19 @@ network needed):
 # OR git bundles exported from networked machines to preserve commit history
 ./scripts/import-haura-all.sh --panel-bundle ./panel.bundle --wings-bundle ./wings.bundle
 
+codex/fork-pterodactyl-panel-as-haura-panel
+
 # OR fetch tarballs directly when outbound network access works
 ./scripts/import-haura-all.sh --fetch-tarballs --panel-ref develop --wings-ref master
+
+ codex/fork-pterodactyl-panel-as-haura-panel
+
+# OR fetch tarballs directly when outbound network access works
+./scripts/import-haura-all.sh --fetch-tarballs --panel-ref develop --wings-ref master
+
+ main
+
+main
 ```
 
 The script:
@@ -36,10 +47,18 @@ The script:
 3. Skips work if either directory already exists.
 4. Accepts `--allow-git-clone` to pull directly from GitHub when outbound access
    is permitted.
+
+
+ main
 5. Accepts `--fetch-tarballs` to download upstream tarballs automatically when
    network access is available (defaults to panel `develop` and wings `master`
    refs; override with `--panel-ref` / `--wings-ref`).
 
+ codex/fork-pterodactyl-panel-as-haura-panel
+
+ main
+
+ main
 ### Option B: import panel only from release archives (fastest)
 
 1. Download the official Pterodactyl **panel** release archive (`panel.tar.gz`) from <https://github.com/pterodactyl/panel/releases> on a machine with internet access.
@@ -93,6 +112,7 @@ Once the upstream code is present, ensure the installer scripts and docs cover:
 - **Ubuntu 22.04+**, **Debian 11+**, **CentOS Stream 8+**: package prerequisites, PHP extensions, MySQL/MariaDB setup, Docker, and Wings systemd units.
 - **Windows (local development)**: WSL2 or Docker Desktop for backend services, Node/Yarn for the React frontend, and Go toolchain for Wings.
 
+ codex/fork-pterodactyl-panel-as-haura-panel
 ## Advanced feature catalog
 
 The Haura Panel design targets more than 30 advanced capabilities across orchestration, security, observability, and operations. Each feature is documented separately for clarity and implementation tracking:
@@ -130,6 +150,8 @@ The Haura Panel design targets more than 30 advanced capabilities across orchest
 - [Offline and air-gapped operations](docs/features/31-offline-and-airgapped.md)
 - [Latency optimization and routing](docs/features/32-latency-optimization.md)
 
+
+ main
 ## Next steps for an advanced Haura Panel
 
 - Add automated installers for each target OS, including database bootstrap and Docker runtime validation.
